@@ -82,9 +82,19 @@ h1 {
     text-shadow: 0px 0px 5px #00000090;
 }
 
-h2 {
-    color: #458dd4;
+h2, h3 {
+    color: #75ade6;
     text-shadow: 0px 0px 5px #00000090;
+}
+
+h4 {
+    text-shadow: 0px 0px 5px #00000090;
+}
+
+h3 {
+    font-size: 20px;
+    border-bottom: 1px dashed #75ade6;
+    margin: 30px auto 10px auto;
 }
 
 #header p {
@@ -97,4 +107,76 @@ h2 {
         font-size: 40px;
         margin-bottom: 20px;
     }
+}
+
+#main .container {
+    display: flex;
+}
+
+#main .card {
+    border: 1px dashed #75ade6;
+    border-radius: 3px;
+    margin: 10px;
+    min-height: 250px;
+    max-width: 250px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    transition: box-shadow .3s linear;
+}
+
+#main .card.tech {
+    min-height: 150px;
+    max-width: 150px;
+}
+
+#main .card img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#main .card:hover {
+    border-color: #458dd4;
+    box-shadow: 0 0 10px #000000FF;
+}
+
+#main .pcontainer .project {
+    margin: 20px 0;
+}
+
+#main .pcontainer .project p {
+    margin: 5px 10px;
+    text-align: justify;
+}
+
+#main .pcontainer .project img {
+    width: 320px;
+}
+
+#main .pcontainer .project img, #main .pcontainer .project .video {
+    float: left;
+    margin: 0 40px 0 0;   
+}
+
+#main .pcontainer .project img.picture, #main .pcontainer .project iframe {
+    box-shadow: 5px 5px 5px #00000060; 
+}
+
+#main .pcontainer .project .clear {
+    clear: both;
+}
+
+#main .pcontainer .project .text {
+    padding-top: 1px;
+}
+
+#main .pcontainer .project .icons {
+    display: flex;
+    padding-top: 10px;
+}
+
+#main .pcontainer .project .icons img {
+    width: 42px;
+    margin-right: 20px;
+    filter: drop-shadow(0px 0px 5px #00000090)
 }
