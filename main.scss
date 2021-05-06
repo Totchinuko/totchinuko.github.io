@@ -80,6 +80,8 @@ body {
 
     .container {
         display: flex;
+        align-content: center;
+        flex-wrap:wrap;
         @media (max-width: $breakpoint-tablet) {
             flex-direction: column;
         }
@@ -115,31 +117,28 @@ body {
     .pcontainer {
         .project {
             margin: 20px 0;
+            display: flex;
+
+            @media (max-width: $breakpoint-tablet) {
+                flex-direction: column;
+                align-content: center;
+            }
 
             p {
                 margin: 5px 10px;
                 text-align: justify;
             }
 
-            img {
-                width: 320px;
-            }
-
             img, .video {
-                float: left;
                 margin: 0 40px 0 0; 
             }
 
             img.picture, iframe {
                 box-shadow: 5px 5px 5px $shadow; 
-            }
-
-            .clear {
-                clear: both;
-            }
-
-            .text {
-                padding-top: 1px;
+                width: 320px;
+                @media (max-width: $breakpoint-tablet) {
+                    width: 240px;
+                }
             }
 
             .icons {
@@ -163,6 +162,10 @@ body {
     z-index: 10;
     display: block;
     flex-direction: column;
+
+    @media (max-width: $breakpoint-tablet) {
+        left: 5px;
+    }
 
     a {
         display: flex;
