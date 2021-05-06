@@ -105,6 +105,9 @@ body {
       text-align: justify; }
     #main .pcontainer .project img, #main .pcontainer .project .video {
       margin: 0 40px 0 0; }
+      @media (max-width: 768px) {
+        #main .pcontainer .project img, #main .pcontainer .project .video {
+          margin: 10px auto; } }
     #main .pcontainer .project img.picture, #main .pcontainer .project iframe {
       box-shadow: 5px 5px 5px #00000090;
       width: 320px; }
