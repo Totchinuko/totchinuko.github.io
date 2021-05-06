@@ -16,25 +16,7 @@ body {
   border-bottom: 5px solid #75ade6;
   box-shadow: 0px 4px 10px #00000090;
   overflow: hidden; }
-  #header .content {
-    width: 70%;
-    margin: 0px auto;
-    text-align: center; }
-  #header p {
-    text-shadow: 0px 0px 5px #00000090; }
-
-#unity-logo {
-  float: left;
-  height: 230px;
-  margin-top: -15px;
-  margin-left: 30px;
-  opacity: 20%; }
-
-#main {
-  margin: 20px auto auto auto;
-  min-height: 100px;
-  width: 70%; }
-  #main h1 {
+  #header h1 {
     font-size: 40px;
     margin-bottom: 20px;
     text-align: center;
@@ -42,9 +24,37 @@ body {
     font-weight: 700;
     text-shadow: 0px 0px 5px #00000090; }
     @media (max-width: 768px) {
-      #main h1 {
+      #header h1 {
         font-size: 30px;
         margin-bottom: 10px; } }
+  #header h2 {
+    color: #75ade6;
+    text-shadow: 0px 0px 5px #00000090; }
+  #header .content {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center; }
+    @media (max-width: 768px) {
+      #header .content {
+        width: 100%; } }
+  #header p {
+    text-shadow: 0px 0px 5px #00000090; }
+  #header .logo {
+    position: relative;
+    margin-top: -15px;
+    margin-left: 30px;
+    opacity: 20%; }
+    @media (max-width: 768px) {
+      #header .logo {
+        display: none; } }
+    #header .logo img {
+      height: 230px;
+      position: absolute; }
+
+#main {
+  margin: 20px auto auto auto;
+  min-height: 100px;
+  width: 70%; }
   #main h2, #main h3 {
     color: #75ade6;
     text-shadow: 0px 0px 5px #00000090; }
@@ -80,10 +90,13 @@ body {
       #main .container .card.tech {
         min-height: 150px;
         max-width: 150px; }
+        @media (max-width: 768px) {
+          #main .container .card.tech {
+            max-width: 250px; } }
   #main .pcontainer .project {
     margin: 20px 0;
     display: flex; }
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       #main .pcontainer .project {
         flex-direction: column;
         align-content: center; } }
