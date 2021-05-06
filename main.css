@@ -1,182 +1,126 @@
 html {
-    background-color: #181A1B;
-    margin: 0;
-    padding: 0;
-}
+  background-color: #181A1B;
+  margin: 0;
+  padding: 0; }
 
 body {
-    margin: 0;
-    padding: 0;
-    color: #EEEEEE;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#main {
-    margin: 20px auto auto auto;
-    min-height: 100px;
-    width: 70%;
-}
+  margin: 0;
+  padding: 0;
+  color: #EEEEEE;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 #header {
-    background-color: #222426;
-    width: 100%;
-    height: 200px;
-    border-bottom: 5px solid #006AD5;
-    box-shadow: 0px 4px 10px #00000022;
-    overflow: hidden;
-}
+  background-color: #222426;
+  width: 100%;
+  height: 200px;
+  border-bottom: 5px solid #75ade6;
+  box-shadow: 0px 4px 10px #00000090;
+  overflow: hidden; }
+  #header .content {
+    width: 70%;
+    margin: 0px auto;
+    text-align: center; }
+  #header p {
+    text-shadow: 0px 0px 5px #00000090; }
+
+#unity-logo {
+  float: left;
+  height: 230px;
+  margin-top: -15px;
+  margin-left: 30px;
+  opacity: 20%; }
+
+#main {
+  margin: 20px auto auto auto;
+  min-height: 100px;
+  width: 70%; }
+  #main h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px #00000090; }
+    @media (max-width: 768px) {
+      #main h1 {
+        font-size: 30px;
+        margin-bottom: 10px; } }
+  #main h2, #main h3 {
+    color: #75ade6;
+    text-shadow: 0px 0px 5px #00000090; }
+  #main h3 {
+    font-size: 20px;
+    border-bottom: 1px dashed #75ade6;
+    margin: 30px auto 10px auto; }
+  #main h4 {
+    text-shadow: 0px 0px 5px #00000090; }
+  #main .container {
+    display: flex; }
+    @media (max-width: 768px) {
+      #main .container {
+        flex-direction: column; } }
+    #main .container .card {
+      border: 1px dashed #75ade6;
+      border-radius: 3px;
+      margin: 10px;
+      min-height: 250px;
+      max-width: 250px;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      transition: box-shadow .3s linear; }
+      #main .container .card:hover {
+        border-color: #75ade6;
+        box-shadow: 0 0 10px #00000090; }
+      #main .container .card img {
+        height: 100px;
+        margin-bottom: 10px; }
+      #main .container .card.tech {
+        min-height: 150px;
+        max-width: 150px; }
+  #main .pcontainer .project {
+    margin: 20px 0; }
+    #main .pcontainer .project p {
+      margin: 5px 10px;
+      text-align: justify; }
+    #main .pcontainer .project img {
+      width: 320px; }
+    #main .pcontainer .project img, #main .pcontainer .project .video {
+      float: left;
+      margin: 0 40px 0 0; }
+    #main .pcontainer .project img.picture, #main .pcontainer .project iframe {
+      box-shadow: 5px 5px 5px #00000090; }
+    #main .pcontainer .project .clear {
+      clear: both; }
+    #main .pcontainer .project .text {
+      padding-top: 1px; }
+    #main .pcontainer .project .icons {
+      display: flex;
+      padding-top: 10px; }
+      #main .pcontainer .project .icons img {
+        width: 42px;
+        margin-right: 20px;
+        filter: drop-shadow(0px 0px 5px #00000090); }
 
 #contact {
-    position: fixed;
-    top: 35%;
-    left: 30px;
-    z-index: 10;
-    display: block;
-    flex-direction: column;
-}
-
-#contact a {
+  position: fixed;
+  top: 35%;
+  left: 30px;
+  z-index: 10;
+  display: block;
+  flex-direction: column; }
+  #contact a {
     display: flex;
     margin: 20px 0;
     align-items: center;
     text-decoration: unset;
-    color: #EEEEEE;
-}
-
-#contact img {
+    color: #EEEEEE; }
+    #contact a span {
+      display: none;
+      font-weight: 700; }
+  #contact a:hover span {
+    display: block; }
+  #contact img {
     width: 42px;
     margin-right: 10px;
-    filter: drop-shadow(0px 0px 5px #00000090)
-}
-
-#contact a span {
-    display: none;
-    font-weight: 700;
-}
-
-
-#contact a:hover span {
-    display: block;
-}
-
-#unity-logo {
-    float: left;
-    height: 230px;
-    margin-top: -15px;
-    margin-left: 30px;
-    opacity: 20%;
-}
-
-#header .content {
-    width: 70%;
-    margin: 0px auto;
-    text-align: center;
-}
-
-h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-    letter-spacing: 5px;
-    font-weight: 700;
-    text-shadow: 0px 0px 5px #00000090;
-}
-
-h2, h3 {
-    color: #75ade6;
-    text-shadow: 0px 0px 5px #00000090;
-}
-
-h4 {
-    text-shadow: 0px 0px 5px #00000090;
-}
-
-h3 {
-    font-size: 20px;
-    border-bottom: 1px dashed #75ade6;
-    margin: 30px auto 10px auto;
-}
-
-#header p {
-    text-shadow: 0px 0px 5px #00000090;
-
-}
-
-@media (min-width: 768px) {
-    h1 {
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-}
-
-#main .container {
-    display: flex;
-}
-
-#main .card {
-    border: 1px dashed #75ade6;
-    border-radius: 3px;
-    margin: 10px;
-    min-height: 250px;
-    max-width: 250px;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    transition: box-shadow .3s linear;
-}
-
-#main .card.tech {
-    min-height: 150px;
-    max-width: 150px;
-}
-
-#main .card img {
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-#main .card:hover {
-    border-color: #458dd4;
-    box-shadow: 0 0 10px #000000FF;
-}
-
-#main .pcontainer .project {
-    margin: 20px 0;
-}
-
-#main .pcontainer .project p {
-    margin: 5px 10px;
-    text-align: justify;
-}
-
-#main .pcontainer .project img {
-    width: 320px;
-}
-
-#main .pcontainer .project img, #main .pcontainer .project .video {
-    float: left;
-    margin: 0 40px 0 0;   
-}
-
-#main .pcontainer .project img.picture, #main .pcontainer .project iframe {
-    box-shadow: 5px 5px 5px #00000060; 
-}
-
-#main .pcontainer .project .clear {
-    clear: both;
-}
-
-#main .pcontainer .project .text {
-    padding-top: 1px;
-}
-
-#main .pcontainer .project .icons {
-    display: flex;
-    padding-top: 10px;
-}
-
-#main .pcontainer .project .icons img {
-    width: 42px;
-    margin-right: 20px;
-    filter: drop-shadow(0px 0px 5px #00000090)
-}
+    filter: drop-shadow(0px 0px 5px #00000090); }
